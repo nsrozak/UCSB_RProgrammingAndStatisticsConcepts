@@ -1,6 +1,62 @@
 # R Programming and Statistics Concepts
 ## Goals of the Project
 - Create templates for writing future programs related to specific statistic methods and models
-  - Analysis of Variance
-  - Time Series
-  - Regression Models
+- Templates written in R coding language
+  - Created in jupyter notebook with markdown
+## Files Included
+### RDesignOfExperiments.ipynb
+- Theoretical content:
+  - Procedures
+    - Pairwise comparisons, Contrast confidence interval and hypothesis test
+    - One Way ANOVA/CRD Model, Two Way ANOVA/RCBD Model, Two Way Full Model with Interaction, Latin Square Incomplete Block Design, 2^k Factorial Design, (2^N, 2^k) Design
+      - Equation, ANOVA table, hypothesis tests for factors, estimate parameters
+    - Confounded effects and obtaining layout with key blocks
+- Coding content:
+  - Critical value and p value for various distributions
+  - Checking ANOVA model assumptions
+  - Variance stabilizing transformation
+  - Creating ANOVA tables
+  - Estimating parameters
+  - Confidence intervals for treatment mean and variance
+  - Multiple comparisons: confidence interval, Bonferroni method, Scheffe method, Tukey method
+  - Creating sign tables
+### RRegressionAnalysisConcepts.ipynb
+- Theoretical content:
+  - Formulas
+    - Sum of Squares
+    - Multiple Linear Regression, Polynomial Regression
+    - Parallel and Nonparallel Models
+  - Procedures
+    - Hypothesis tests for significant parameters, categorical variables, and powers
+    - ANVOA table, Sequential Sum of Squares
+    - Confidence Intervals and Prediction Intervals
+    - Least Squares Estimates, Weighted Least Squares Estimates
+    - Coefficent interpretation
+- Coding content:
+  - Creating linear models
+  - Creating scatterplot matrices and added variable plots
+  - Checking linear regression assumptions
+  - Invariance Transformation, Power Transformation, Box-Cox Transformation
+  - Identifying outliers, leverage points, and influential points
+  - Predictor selection with Stepwise Regression and Regression Subsets
+  - Encoding categorical variables
+### RTimeSeriesConcept.ipynb
+- Theoretical content:
+  - Formulas
+    - Autocovariance Functions, Autocorrelation Functions, Partial Autocorrelation Functions
+    - SARMIA Model
+    - Yule Walker Equations, Durbin-Levinson Algorithm, Innovation Algorithm
+  - Procedures
+    - Model identification using Sample Autocorrelation and Sample Partial Autocorrelation functions
+    - Unit roots and identifying overdifferenced and underdifferenced data
+    - Identifying p, q, P, and Q in SARIMA models
+    - Finding maximum likelihood coefficient estimates
+    - Predicting AR(1), AR(p), MA(q), and ARMA(p,q)
+- Coding content:
+  - Simulating ARMA models
+  - Stabilizing variance
+  - Differencing to remove seasonality and trend
+  - Comparing different models with AICC
+  - Preliminary coefficient estimates and maximum likelihood coefficient estimates
+  - Diagnostic checking
+  - Forecasting
