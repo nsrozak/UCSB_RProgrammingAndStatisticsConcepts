@@ -5,58 +5,33 @@
   - Created in jupyter notebook with markdown
 ## Files Included
 ### RDesignOfExperiments.ipynb
-- Theoretical content:
-  - Procedures
-    - Pairwise comparisons, Contrast confidence interval and hypothesis test
-    - One Way ANOVA/CRD Model, Two Way ANOVA/RCBD Model, Two Way Full Model with Interaction, Latin Square Incomplete Block Design, 2^k Factorial Design, (2^N, 2^k) Design
-      - Equation, ANOVA table, hypothesis tests for factors, estimate parameters
-    - Confounded effects and obtaining layout with key blocks
-- Coding content:
-  - Critical value and p value for various distributions
-  - Checking ANOVA model assumptions
-  - Variance stabilizing transformation
-  - Creating ANOVA tables
-  - Estimating parameters
-  - Confidence intervals for treatment mean and variance
-  - Multiple comparisons: confidence interval, Bonferroni method, Scheffe method, Tukey method
-  - Creating sign tables
+- Content: 
+	- Check ANOVA model assumptions
+	- Create ANOVA equations and tables
+		- One Way ANOVA/CRD Model, Two Way ANOVA/RCBD Model, Two Way Full Model with Interaction, Latin Square Incomplete Block Design, 2^k Factorial Design, (2^N, 2^k) Design
+	- Least squares estimates of parameters
+	- Hypothesis tests and confidence intervals for contrasts and multiple comparisons
 ### RRegressionAnalysisConcepts.ipynb
-- Theoretical content:
-  - Formulas
-    - Sum of Squares
-    - Multiple Linear Regression, Polynomial Regression
-    - Parallel and Nonparallel Models
-  - Procedures
-    - Hypothesis tests for significant parameters, categorical variables, and powers
-    - ANVOA table, Sequential Sum of Squares
-    - Confidence Intervals and Prediction Intervals
-    - Least Squares Estimates, Weighted Least Squares Estimates
-    - Coefficent interpretation
-- Coding content:
-  - Creating linear models
-  - Creating scatterplot matrices and added variable plots
-  - Checking linear regression assumptions
-  - Invariance Transformation, Power Transformation, Box-Cox Transformation
-  - Identifying outliers, leverage points, and influential points
-  - Predictor selection with Stepwise Regression and Regression Subsets
-  - Encoding categorical variables
+- Content:
+	- Check linear regression assumptions
+	- Transform variables with Invariance Transformation, Power Transformation, and Box-Cox Transformation
+	- Identify outliers, leverage points, and influential points
+	- Create multiple linear regression and polynomial regression models for numeric and categorical data
+	- Hypothesis tests for significant predictors, significant categorical variables, significant interaction effects, and significant model degrees
+	- Predictor selection with Stepwise Regression and Regression Subsets
+	- Least squares estimates and weighted least squares estimates of coefficients
+	- Confidence intervals of new responses
 ### RTimeSeriesConcept.ipynb
-- Theoretical content:
-  - Formulas
-    - Autocovariance Functions, Autocorrelation Functions, Partial Autocorrelation Functions
-    - SARMIA Model
-    - Yule Walker Equations, Durbin-Levinson Algorithm, Innovation Algorithm
-  - Procedures
-    - Model identification using Sample Autocorrelation and Sample Partial Autocorrelation functions
-    - Unit roots and identifying overdifferenced and underdifferenced data
-    - Identifying p, q, P, and Q in SARIMA models
-    - Finding maximum likelihood coefficient estimates
-    - Predicting AR(1), AR(p), MA(q), and ARMA(p,q)
-- Coding content:
-  - Simulating ARMA models
-  - Stabilizing variance
-  - Differencing to remove seasonality and trend
-  - Comparing different models with AICC
-  - Preliminary coefficient estimates and maximum likelihood coefficient estimates
-  - Diagnostic checking
-  - Forecasting
+- Content:
+	- Simulating ARMA models
+	- Stabilizing variance with Box-Cox
+	- Differencing to remove seasonality and trend
+	- Calculate Autocovariance Functions, Autocorrelation Functions, and Partial Autocorrelation Functions for time series data
+	- Model identification of SARIMA(P,D,Q)x(p,d,q)s using Sample Autocorrelation and Sample Partial Autocorrelation Functions
+	- Comparing different models with AICC
+	- Preliminary coefficient estimates with Yule-Walker Equations, Durbin-Levinson Algorithm, and Innovation Algorithm
+	- Maximum likelihood estimated coefficients
+	- Diagnostic checking
+	- Forecasting
+## Acknowledgements
+Thank you to my professors and TAs at UCSB in PSTAT 122, PSTAT 126, and PSTAT 174 for teaching me these coding concepts.
